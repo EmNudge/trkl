@@ -1,7 +1,12 @@
 # trkl
 Reactive JavaScript programming in less than half a kilobyte.
 
-For just a meagre **434 bytes** (minified and gzipped), you get
+> ## Interlude
+> This fork of the original work was originally just to see if I could understand the underlying code. It turns out I was able to compress the lib even further and so I decided to fork it. We went from 434 bytes to 324 bytes.<br><br>
+
+I also added a ton of comments for anyone else wondering how this works.
+
+For just a meager **~~434~~ 324 bytes** (minified and gzipped), you get
 
 - observables with a pub/sub interface
 - powerful Knockout.js-style computeds with proper "magical" dependency tracking

@@ -2,11 +2,11 @@
   "name": "trkl",
   "version": "1.9.2",
   "description": "Reactive microlibrary offering Knockout-style observables and computeds for less than 500 bytes",
-  "main": "trkl-min.js",
+  "main": "dist/trkl.js",
   "types": "./index.d.ts",
   "scripts": {
-    "test": "karma start",
-    "minify": "node minify.js"
+    "test": "jasmine",
+    "build": "rollup -c && node get-size"
   },
   "repository": {
     "type": "git",
@@ -25,10 +25,11 @@
   "homepage": "https://github.com/jbreckmckye/trkl#readme",
   "devDependencies": {
     "gzip-size": "3.0.0",
-    "jasmine-core": "2.6.2",
-    "karma": "1.7.0",
-    "karma-chrome-launcher": "2.1.1",
-    "karma-jasmine": "1.1.0",
-    "uglify-es": "3.0.15"
+    "jasmine": "^3.5.0",
+    "rollup": "^2.15.0",
+    "@rollup/plugin-typescript": "^4.1.2",
+    "rollup-plugin-terser": "^6.1.0",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.5"
   }
 }

@@ -1,8 +1,6 @@
-'use strict';
-let trkl = window.trkl;
+const trkl = require('../dist/trkl.cjs.js');
 
 describe('trkl observables', ()=> {
-
 	it('Provides an accessor that may be used as a getter or setter', ()=> {
 		const value = {};
 		const accessor = trkl();
